@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<!--
+		Online portfolio website
+		Designed and Developed by Adam Hughes in Fall 2017
+		adphughe[at]iu.edu
+		Go Hoosiers!
+	-->
+
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113959451-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-113959451-1');
+		</script>
+		
+		<meta charset="utf-8">
+		<title>Adam Hughes | INPAWS Web Application</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/aggiestravelinc.css" rel="stylesheet" type="text/css" media="all">
+		<!--Font Awesome .io -->
+		<script src="https://use.fontawesome.com/a686b3c76b.js"></script>
+
+		<!--[if lt IE 9]>
+    		<script src="components/html5shiv/html5shiv.min.js"></script>
+		<![endif]-->
+		
+		<style>
+			body {
+				background:url(images/inpaws/team-lg.jpg) no-repeat top center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+			
+			/* Small devices (landscape phones, 576px and up) */
+			@media (max-width: 576px) {
+				body {
+					background:url(images/inpaws/team-sm.jpg) no-repeat top right fixed;
+					background-size: 576px;
+					}
+			}
+			
+			.skills {
+				display:flex;
+				justify-content:space-around;
+				flex-flow:row wrap;
+				padding-top:0;
+				width:100%;
+				flex-grow:1;
+			}
+		</style>
+		
+	</head>
+
+	<body>
+		<header><a id="home"></a>
+			<h1 class="name"><a href="index.html">Adam Hughes</a></h1>
+			<nav class="sticky-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#experience">Experience</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<article>
+			<div class="header-align">
+				<h2>Indiana Native Plant and Wildflower Society (INPAWS)</h2>
+				<small><em>Created in Spring 2018 with the ServeIT Clinic</em></small>
+				<br>
+				<small>Team members: Sarah Burns, Maritza Castaneda, Karly Kandel, JY Kim, Lucas Rutherford, Caleb Schaftlein, and Cassidy Wichowsky</small>
+			</div>
+			<div class="project-description">
+				<h3>Scope: Create a web application where users can search for native Indiana plants via garden criteria or by plant name, thus returning native plant pollinators to Indiana.</h3>
+				
+				<strong>Technical assets used:</strong>
+				<div class="skills">
+				<ul>
+					<li>PHP</li>
+					<li>MySQL</li>
+				</ul>
+				<ul>
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>Adobe XD</li>
+				</ul>
+				<ul>
+					<li>WordPress</li>
+					<li>Git</li>
+					<li>JIRA (with agile methodologies)</li>
+				</ul>
+				</div>
+			
+				<p><strong>Background: </strong>INPAWS is a nonprofit located in Bloomington, Indiana whose goal is to remove invasive plants from Indiana, promote the planting of native plants, and bring more native plant pollinators back to Indiana. INPAWS found that a lot of amateur gardeners do not know what plants are native to Indiana or which plants bring in certain pollinators. In order to combat this learning curve, INPAWS asked my team to develop a web application where users can list their garden's criteria and receive a list of native plants that fit their garden's characteristics. More advanced gardeners can also search for plants by latin or common name.</p>
+				
+				<p><strong>My Role: </strong>As the project manager on this team, my roles were to:<p>
+				<ul>
+					<li>Create meeting agenda for weekly team meetings that I led</li>
+					<li>Write weekly status reports that were sent to my supervisor and client</li>
+					<li>Set up sprints on JIRA and track story progress to ensure efficient completion of tasks</li>
+					<li>Attend weekly team lead meetings and relay information to my team</li>
+					<li>Address and remove roadblocks that interns hit</li>
+					<li>Maintain effective communciation with our client to ensure our progress fit our client's needs</li>
+				</ul>
+				
+				<p><strong>Design Process: </strong>For this project, our client already had a website that they liked, so we did not have to create any color schemes or page layouts. However, during one meeting, our client mentioned that she would love to show gardeners a preview of the project to promote the application. Thus, I had one intern use Adobe XD to create a prototype of the application for our client. This prototype helped us make iterations to how the client wanted the form and results page to appear that sketches could not quite convey.</p>
+
+				<div class="screenshots">
+					<figure>
+						<picture>
+							<source media="(min-width: 768px)" srcset="images/inpaws/prototype.PNG">
+							<source media="(min-width: 465px)" srcset="images/inpaws/prototype-md.png">
+						  <img src="images/inpaws/prototype.PNG" alt="Prototype">
+						</picture>
+						<figcaption>The first page of our prototype, highlighting how users can search for plants by name or by criteria matching their gardens.</figcaption>
+					</figure>
+				</div>
+				
+				<p>We also had to design the database queries to only pull data that was necessary for the users. Our database has sixteen different columns attached to a single plant; all of this information is not directly revelant to the user. We concluded that a user would only need to see a plant image, common name, latin name, and a link to more information about the plant. We decided to omit plant colors, heights, and other descriptors because that is what the user initially inputted to find the plant, therefore they know that the plant fits that criteria. This removed a lot of excess clutter on the results page, making it easier for gardeners to find the plants they want.</p>
+				
+				<p><strong>Development Process: </strong>We created the INPAWS databse using MySQL. The list of plants that INPAWS had was in nan Excel sheet that did not support importing data into MySQL efficiently. Once our team edited the Excel entries, we imported it into our database that we set up. After discussing the database and our prototype with our client, we decided to make a few changes to it. This includes setting up the search queries to appeal to a range of heights for plants rather than adjectives describing various heights. The most challenging part of creating the database was inserting images to appear on the results page. After researching various options for adding the images, we decided to insert them as BLOB images and then pull the images using select statements.</p>
+				
+				<div class="screenshots">
+					<figure>
+						<picture>
+							<source media="(min-width: 768px)" srcset="images/inpaws/plugin.JPG">
+							<source media="(min-width: 576px)" srcset="images/inpaws/plugin-md.jpg">
+							<img src="images/inpaws/plugin-sm.jpg" alt="Custom plugin screen">
+						</picture>
+						<figcaption>The custom plugin that our team implemented on the INPAWS WordPress website. This also allows for INPAWS to have an option on the dashboard to easily edit the database.</figcaption>
+					</figure>
+				</div>
+				
+				<p>We also developed an admin panel for INPAWS that allows for simple manipulation of the database. This allows for the administrator to add, edit, and remove plants from the database. When clicking on a plant to edit or adding a new plant, the setup is similar to how it appears on the website; the administrator can check boxes of criteria that matches the plant and input various heights, notes, or an image. We also created the plugin to have its own tab on the WordPress dashboard to clearly seaparate the application from the rest of the website.</p>
+				
+			</div>
+				
+<!-- Go to next project, or back to the experience list -->
+				<div>Click <a href="index.html#experience" title="Experience">here</a> to return to my other projects <a href="caps-scheduler.html" style="float:right;" title="Next project">Go to next project: CAPS Mobile Scheduler</a></div>
+		</article>
+		
+<!-- Back to top icon, visualized as an arrow in the bottom right corner -->
+		<a href="#home" title="back to top"><i id="arrow-icon" class="fa fa-2x fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+		
+<!-- Footer, containing contact information -->
+		<footer><a id="contact"></a>
+			<h2>Contact</h2>
+			<p>Feel free to contact me in either of the ways listed below. If you have any projects that you are working on or need completed, I would also be interested in working on them with you!</p>
+			
+			<div class="contact-info">
+				<div><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><a href="mailto:adphughe@indiana.edu" title="Email Adam">adphughe&#64;iu.edu</a></div>
+				<br>
+				<div><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i><a href="https://www.linkedin.com/in/adamphughes/" title="Linkedin (New Tab)" target="_blank">Connect on LinkedIn</a></div>
+			</div>
+		</footer>	
+	</body>
+</html>

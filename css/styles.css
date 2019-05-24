@@ -1,0 +1,233 @@
+/*
+GOLD: rgb(255,215,0)
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|PT+Serif');
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*** GENERAL ***/
+body {
+	background:url(../images/IMAG0598-md.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*Hide an element, only to be read by a screen reader */
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	border: 0;
+}
+
+/*** NAVIGATION ***/
+nav ul {
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+}
+
+/* Makes link text black and removes the underline */
+nav a, h1 a {
+	text-decoration:none;
+	color:#000;
+}
+
+a:active {
+	color:rgb(255,215,0);
+}
+
+nav a:hover {
+	border-bottom:rgb(255,215,0) 3px solid;
+}
+
+/*** TYPOGRAPHY ***/
+h1, h2, h3, h4, h5 {
+	font-family:'Josefin Sans', sans-serif;
+}
+p, div, nav {
+	font-size:16px;
+	font-family:'PT Serif', serif;
+}
+
+h1.name {
+	font-size:36px;
+	text-align:center;
+}
+
+/*** LAYOUT ***/
+header {
+	padding:0.5em 0 0.3em 0;
+	margin-bottom:25.0em;
+}
+
+article { padding:1.5em 1.2em 2.5em 1.5em; }
+footer { padding:1.5em; }
+aside { padding:1.0em 0; }
+
+/*** DESIGN ***/
+
+article, aside, header {
+	background-color:#fff;
+}
+
+#arrow-icon {
+	position:fixed;
+	right:20px;
+	bottom:20px;
+	color:rgb(255,215,0);
+}
+
+
+/*** ABOUT SECTION ***/
+.about-flex {
+	display:flex;
+	justify-content:space-between;
+	flex-flow:row no-wrap;
+}
+
+.description {
+	border-right:3px solid rgb(255,215,0);
+	padding-right:15px;
+}
+
+
+/*** JOBS SECTION ***/
+.jobs {
+	background-color:rgba(255,215,0,0.9);
+	display:flex;
+	align-items:center;
+	flex-flow:column wrap;
+	text-align:center;
+	padding:20px;
+}
+
+.jobs p {
+	font-size:24px;
+	font-family: 'Josefin Sans', serif;
+}
+
+/*** EXPERIENCE SECTION ***/
+.projects {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+}
+
+.projects figure {
+	width:230px;
+	text-align:center;
+}
+
+.projects figure img {
+	margin-bottom:0.75em;
+}
+
+/*** FOOTER ***/
+footer, footer a {
+	color:#fff;
+}
+footer {
+	background-color:rgba(25,25,25,0.85);
+}
+
+footer a {
+	padding-left:10px;
+}
+
+/*** PROJECT SPECIFIC PAGES ***/
+.project-description {
+	margin:0 auto;
+	width:75%;
+}
+
+.screenshots {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	margin:0 auto;
+}
+
+.header-align {
+	text-align:center;
+	margin:0 auto;
+}
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and lower) */
+@media (max-width: 576px) {
+	body {
+		background:url(../images/IMAG0598-sm.jpg) no-repeat right fixed;
+		-webkit-background-size: 576px;
+		-moz-background-size: 576px;
+		-o-background-size: 576px;
+		background-size: 576px;
+	}
+
+	/* Layout */
+	.screenshots img { max-width:275px; }
+
+	header { margin-bottom:15.0em; }
+	
+	article { padding-bottom:3.0em; }
+	
+	.jobs p { font-size:18px; }
+}
+
+/* Medium devices (tablets, 768px and lower) */
+@media (max-width: 768px) {
+	body {
+		background:url(../images/IMAG0598-sm.jpg) no-repeat right fixed;
+		-webkit-background-size: 768px;
+		-moz-background-size: 768px;
+		-o-background-size: 768px;
+		background-size: 768px;
+	}
+	
+	.md-hide { display:none; }
+	
+	footer {
+		background-color:rgba(6.38,8.16,8.42,1.0);
+	}
+}
+
+/* Large devices (desktops, 992px and lower) */
+@media (max-width: 992px) {
+	body {
+		background:url(../images/IMAG0598.jpg) no-repeat center top fixed;
+		background-size: 992px;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and lower) */
+@media (min-width: 1200px) {
+	body {
+		background:url(../images/IMAG0598.jpg) no-repeat center top fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	
+	p, div, nav {
+		font-size:18px;
+	}
+}
+
+@media (min-width: 1400px) {
+	p, div, nav {
+		font-size:20px;
+	}
+}

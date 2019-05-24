@@ -1,0 +1,18 @@
+<figure>
+	<a href="autonomousvehicles.html" title="Autonomous Vehicle Project">
+		<img class="hvr-bob fade-up" src="images/auto-vehicle-225px.png" style="height:225px; width:225px; border-radius:8px;" alt="Automated car UX Project">
+	</a>
+	<figcaption>
+		<strong>Autonomous Vehicles &mdash; February to March 2017</strong>
+		<p>Created a user experience for a five-year-old on their way to school in the morning. How could we build such a great experience that the parent doesn't even need to be there?</p>
+	</figcaption>
+</figure>
+<figure>
+	<a href="CJAM.html" title="CJAM project">
+		<img class="hvr-bob fade-up" src="images/SnapcodeCJAM.png" alt="Community Justice and Mediation Center">
+	</a>
+	<figcaption>
+		<strong>Community Justice and Mediation Center &mdash; Fall&nbsp;2016</strong>
+		<p>Developed a new website for CJAM with the goal of promoting the services they offer and increasing donations.</p>
+	</figcaption>
+</figure>
