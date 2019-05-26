@@ -147,6 +147,8 @@ footer a {
 	padding-left:10px;
 }
 
+footer p { max-width:900px; }
+
 /*** PROJECT SPECIFIC PAGES ***/
 .project-description {
 	margin:0 auto;
