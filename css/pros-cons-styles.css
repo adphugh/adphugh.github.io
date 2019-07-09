@@ -79,7 +79,7 @@ i[class~=fab]:hover, i[class~=fas]:hover { color:#C29A67; }
 /*** DESIGN ***/
 body {
 	background-color:#5A4180; /* For browsers that do not support gradients */
-	background-image: linear-gradient(to right, #2D2140, #4B32A4); /* Purple gradient background */
+	background-image: linear-gradient(to right, #4B32A4, #533AAC, #4B32A4); /* Purple gradient background */
 }
 
 form { /* Sets the text-box to be the entire height of the screen */
